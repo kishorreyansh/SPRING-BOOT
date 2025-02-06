@@ -1,7 +1,6 @@
 package com.restapi.springbootrestdemo.services;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -16,8 +15,8 @@ public class BookServiceStandAlone {
 	private static List<Book> list = new ArrayList<>();
 	
 	static {
-		list.add(new Book(02,"JAVA","Ridhansh"));
-		list.add(new Book(03,"React","Salaar"));
+		//list.add(new Book(02,"JAVA","Ridhansh"));
+		//list.add(new Book(03,"React","Salaar"));
 	}
 	
 	//Get All Books
