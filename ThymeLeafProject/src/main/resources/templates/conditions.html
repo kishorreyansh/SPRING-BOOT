@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8" />
+	<title>Conditions Examples</title>
+</head>
+<body>
+	User is <span th:style="${isActive} ? 'color:green;font-weight:bold;' : 'color:red;font-weight:bold;' "
+	th:text=" ${isActive} ? 'ACTIVE' : 'NOT ACTIVE' "></span>
+	<br/>
+	<h2 th:if="${gender} == 'M' ">Male</h2>
+	<h2 th:unless="${gender} == 'M' ">Female</h2>
+	
+	<div th:switch="${#lists.size(mylist)}">
+		<h1 th:case="'0'">Zero Elements</h1>
+		<h1 th:case="'1'">One Element</h1>
+		<h1 th:case="*">More than One Elements</h1>
+	</div>
+</body>
+</html>

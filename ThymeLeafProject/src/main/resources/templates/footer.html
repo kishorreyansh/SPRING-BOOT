@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8" />
+	<title>Footer Page</title>
+</head>
+<body>
+	<footer id="fragmenttag" th:fragment="footer1(title,subtitle)">
+		<div  class="container">
+			<h2 th:text="${title}"></h2>
+			<h2 th:text="${subtitle}"></h2>
+			<h1>Learning Spring Boot</h1>
+			<h2>Learning Thymeleaf</h2>
+		</div>
+	</footer>
+</body>
+</html>
